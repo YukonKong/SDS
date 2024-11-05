@@ -719,7 +719,7 @@ def main(cfg):
     with open(max_reward_code_path.replace(".py", ".txt"), "r") as file:
         lines = file.readlines()
     for line in lines:
-        # 查找以"Dashboard: "开头的行
+        # 查找以"Dashboard: "开头行
         if line.startswith("Dashboard: "):
             # 获取运行目录
             run_dir = line.split(": ")[1].strip()
